@@ -15,9 +15,14 @@ print(y)
 print(z)
  """
 
-verb1 = input("Verb1 = ")
+""" verb1 = input("Verb1 = ")
 verb2 = input("Verb2 = ")
 noun1 = input("Noun1 = ")
 number1 = input("Number1 = ")
 celebrity1 = input("Celebrity1 = ")
-print(f"{celebrity1} {verb1} to school then {verb2} because he was running {number1} minutes late. He then brought a {noun1}")
+print(f"{celebrity1} {verb1} to school then {verb2} because he was running {number1} minutes late. He then brought a {noun1}") """
+
+userinput = input("write something:")
+def word_count(sentence):
+    word_count = word_count(userinput)
+print(f"number of words is: {word_count}")
