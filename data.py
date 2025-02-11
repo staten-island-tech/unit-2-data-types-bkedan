@@ -30,7 +30,37 @@ def word_count(sentence):
 word_count = word_count(user_input)
 print(f"number of words is: {word_count}") """
 
-bill = input("Enter the bill amount")
+""" bill = input("Enter the bill amount")
+tip = input("Enter the tip amount")
+bill = float(bill)
+tip = int(tip)
+total = bill + tip
+print(f"The total amount to be paid is: ${total:.2f}")
+:.2f = tells python how to display the total """
 
 
+""" def check_odd_even(number): 
+    if number % 2 == 0:
+        return "Even"
+    else: 
+        return "Odd"
+    
+number = int(input("Enter a number: "))
+result = check_odd_even(number)
+print(f"The number {number} is {result}.") """
+
+def tip_calculate(bill, service):
+    bill = float(bill)
+    if service.lower() == "bad":
+        tip_percentage = 0 * bill
+    elif service.lower() == "okay":
+        tip_percentage = 0.15 * bill
+    elif service.lower() == "good":
+        tip_percentage = 0.2 * bill
+    elif service.lower() == "great":
+        tip_percentage = 0.25 * bill
+    else:
+        return f"Invalid service rating. Please choose from 'bad', 'okay', 'good', or 'great'.
+tip = bill * tip_percentage
+total = bill + tip 
 
