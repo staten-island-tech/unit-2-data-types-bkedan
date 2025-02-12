@@ -51,16 +51,20 @@ print(f"The number {number} is {result}.") """
 
 def tip_calculate(bill, service):
     bill = float(bill)
-    if service.lower() == "bad":
+    if service == "bad":
         tip_percentage = 0 * bill
-    elif service.lower() == "okay":
+    elif service == "okay":
         tip_percentage = 0.15 * bill
-    elif service.lower() == "good":
+    elif service == "good":
         tip_percentage = 0.2 * bill
-    elif service.lower() == "great":
+    elif service == "great":
         tip_percentage = 0.25 * bill
     else:
-        return f"Invalid service rating. Please choose from 'bad', 'okay', 'good', or 'great'.
-tip = bill * tip_percentage
-total = bill + tip 
+        return "Please choose from 'bad', 'okay', 'good', or 'great'."
+    return tip, bill + tip
+bill_amount = float(input("Enter bill: "))
+rating = input("service (only accepts bad, okay, good, great):)")
+tip, total = tip_calculate(bill_amount, rating)
+print(f"Tip: ${tip:.2f}, Total: ${total:.2f}")
 
+tip_calculate()
