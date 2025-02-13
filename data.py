@@ -49,34 +49,39 @@ number = int(input("Enter a number: "))
 result = check_odd_even(number)
 print(f"The number {number} is {result}.") """
 
-def tip_calculate(bill, service):
+""" def tip_calculate(bill, service):
     bill = float(bill)
     
-    # Set tip percentage based on the service rating
     if service.lower() == "bad":
-        tip_percentage = 0  # 0% tip for bad service
+        tip_percentage = 0  
     elif service.lower() == "okay":
-        tip_percentage = 0.15  # 15% tip for okay service
+        tip_percentage = 0.15  
     elif service.lower() == "good":
-        tip_percentage = 0.2  # 20% tip for good service
+        tip_percentage = 0.2  
     elif service.lower() == "great":
-        tip_percentage = 0.25  # 25% tip for great service
+        tip_percentage = 0.25  
     else:
-        return "Please choose from 'bad', 'okay', 'good', or 'great'.", 0  # Invalid service input
-    
-    # Calculate the tip and total
+        return "Please choose from 'bad', 'okay', 'good', or 'great'."
     tip = bill * tip_percentage
     total = bill + tip
     
-    # Return a tuple (tip, total)
     return tip, total
 bill_amount = float(input("Enter bill: "))
 rating = input("Service rating (bad, okay, good, great): ")
 tip, total = tip_calculate(bill_amount, rating)
 
-# Handle the case of invalid service rating
-if isinstance(tip, str):  
-    print(tip)
-else:
-    print(f"Tip: ${tip:.2f}, Total: ${total:.2f}")
+print(f"Tip: ${tip:.2f}, Total: ${total:.2f}") """
+
+""" def find_factors(number):
+    factors = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            factors.append(i)
+    return factors
+number = 1024
+print(f"The factors of {number} are: {find_factors(number)}")
+ """
+
+def find_gcf(x, y):
+    gcf
 
