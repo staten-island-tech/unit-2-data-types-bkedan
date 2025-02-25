@@ -82,10 +82,12 @@ number = 1024
 print(f"The factors of {number} are: {find_factors(number)}")
  """
 
-def find_gcf():
+""" def find_gcf():
     number1 = int(input("Enter number1:"))
     number2 = int(input("Enter number2:"))
     while number2 != 0:
         number1, number2 = number2, number1 % number2
     print(f"the gcf is {number1}")
-find_gcf()
+find_gcf() """
+
+
